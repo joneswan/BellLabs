@@ -1,1 +1,1 @@
-# trial_and_error
+# Trial and error investigation
