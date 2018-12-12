@@ -1,0 +1,30 @@
+=============================================================================
+       __|  __|_  )
+       _|  (     /   Deep Learning AMI (Amazon Linux) Version 15.0
+      ___|\___|___|
+=============================================================================
+
+Please use one of the following commands to start the required environment with the framework of your choice:
+for MXNet(+Keras2) with Python3 (CUDA 9.0 and Intel MKL-DNN) _______________________________ source activate mxnet_p36
+for MXNet(+Keras2) with Python2 (CUDA 9.0 and Intel MKL-DNN) _______________________________ source activate mxnet_p27
+for TensorFlow(+Keras2) with Python3 (CUDA 9.0 and Intel MKL-DNN) _____________________ source activate tensorflow_p36
+for TensorFlow(+Keras2) with Python2 (CUDA 9.0 and Intel MKL-DNN) _____________________ source activate tensorflow_p27
+for Theano(+Keras2) with Python3 (CUDA 9.0) _______________________________________________ source activate theano_p36
+for Theano(+Keras2) with Python2 (CUDA 9.0) _______________________________________________ source activate theano_p27
+for PyTorch with Python3 (CUDA 9.2 and Intel MKL) ________________________________________ source activate pytorch_p36
+for PyTorch with Python2 (CUDA 9.2 and Intel MKL) ________________________________________ source activate pytorch_p27
+for CNTK(+Keras2) with Python3 (CUDA 9.0 and Intel MKL-DNN) _________________________________ source activate cntk_p36
+for CNTK(+Keras2) with Python2 (CUDA 9.0 and Intel MKL-DNN) _________________________________ source activate cntk_p27
+for Caffe2 with Python2 (CUDA 9.0) ________________________________________________________ source activate caffe2_p27
+for Caffe with Python2 (CUDA 8.0) __________________________________________________________ source activate caffe_p27
+for Caffe with Python3 (CUDA 8.0) __________________________________________________________ source activate caffe_p35
+for Chainer with Python2 (CUDA 9.0 and Intel iDeep) ______________________________________ source activate chainer_p27
+for Chainer with Python3 (CUDA 9.0 and Intel iDeep) ______________________________________ source activate chainer_p36
+for base Python2 (CUDA 9.0) __________________________________________________________________ source activate python2
+for base Python3 (CUDA 9.0) __________________________________________________________________ source activate python3
+
+Official Conda User Guide: https://conda.io/docs/user-guide/index.html
+AWS Deep Learning AMI Homepage: https://aws.amazon.com/machine-learning/amis/
+Developer Guide and Release Notes: https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html
+Support: https://forums.aws.amazon.com/forum.jspa?forumID=263
+=============================================================================
