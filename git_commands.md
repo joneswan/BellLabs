@@ -44,7 +44,7 @@ Git push master fatal: You are not currently on a branch
 https://stackoverflow.com/questions/30471557/git-push-master-fatal-you-are-not-currently-on-a-branch
 
 
-Git: Delete a branch (local or remote)
+#### Git: Delete a branch (local or remote)
 To delete a local branch
 
 COPY
