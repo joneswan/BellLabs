@@ -1,0 +1,17 @@
+version: '3'
+services:
+  bc_v01:
+    image: bc1:v01
+    ports:
+      - "5000:5000"
+    environment:
+    - AUTHENTICATE_UI=false
+    - AUTHO_CLIENTID=$AUTHO_CLIENTID
+    - AUTHO_DOMAIN=certifai.autho0.com
+    - UI_READONLY=false
+    links:
+      - "bc_server_v01:bc_server_v01-lb"
+  bc_server_v01:
+    image: bc_server_1:v01
+    ports:
+      - "8551:80"
