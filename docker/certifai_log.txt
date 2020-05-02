@@ -1,0 +1,113 @@
+Before doing anything
+
+PS C:\Users\jwan> docker image ls
+REPOSITORY                                TAG                 IMAGE ID            CREATED             SIZE
+bc_server_1                               v01                 9715e2d59a26        4 months ago        1.73GB
+bc_1                                      v01                 ebf86be9f36e        4 months ago        636MB
+c12esolutions/cortex-certifai-prod-hsbc   0eb4412             47af2fe4973a        5 months ago        631MB
+c12esolutions/cortex-certifai-prod-hsbc   model_server        4220e453df21        5 months ago        1.73GB
+
+Pull image 0fd9538 from c12esolutions
+
+PS C:\Users\jwan> docker pull c12esolutions/cortex-certifai-prod-hsbc:0fd9538
+0fd9538: Pulling from c12esolutions/cortex-certifai-prod-hsbc
+000eee12ec04: Already exists                                                                                                          
+ddc2d83f8229: Already exists                                                                                                          
+3571e8aba018: Already exists                                                                                                          
+4a7b90e0e057: Already exists                                                                                                          
+99974a434243: Already exists                                                                                                          
+b899b3aee141: Pull complete                                                                                                           
+0b5e03070cd5: Pull complete                                                                                                           
+ba7859712c0f: Pull complete                                                                                                           
+ab324f786ed6: Pull complete                                                                                                           
+6d742d62cf39: Pull complete                                                                                                           
+f10d8c19b529: Pull complete                                                                                                           
+fec38f174747: Pull complete                                                                                                           
+415fa1950c1d: Pull complete                                                                                                           
+Digest: sha256:f0962645a9f8e27af50331b872696d88ffb7e65e3c79bc2589dff9133a267c8d
+Status: Downloaded newer image for c12esolutions/cortex-certifai-prod-hsbc:0fd9538
+docker.io/c12esolutions/cortex-certifai-prod-hsbc:0fd9538
+
+PS C:\Users\jwan> docker image ls
+REPOSITORY                                TAG                 IMAGE ID            CREATED             SIZE
+c12esolutions/cortex-certifai-prod-hsbc   0fd9538             d5ac1003709a        3 months ago        605MB
+bc_server_1                               v01                 9715e2d59a26        4 months ago        1.73GB
+bc_1                                      v01                 ebf86be9f36e        4 months ago        636MB
+c12esolutions/cortex-certifai-prod-hsbc   0eb4412             47af2fe4973a        5 months ago        631MB
+c12esolutions/cortex-certifai-prod-hsbc   model_server        4220e453df21        5 months ago        1.73GB
+
+Pull image model_server from c12esolutions
+
+PS C:\Users\jwan> docker pull c12esolutions/cortex-certifai-prod-hsbc:model_server
+model_server: Pulling from c12esolutions/cortex-certifai-prod-hsbc
+000eee12ec04: Already exists                                                                                                          
+ddc2d83f8229: Already exists                                                                                                          
+3571e8aba018: Already exists                                                                                                          
+4a7b90e0e057: Already exists                                                                                                          
+99974a434243: Already exists                                                                                                          
+209d5d713d28: Already exists                                                                                                          
+197179217b79: Already exists                                                                                                          
+479f8532dcbb: Already exists                                                                                                          
+79c69e56e766: Already exists                                                                                                          
+4218d3a442db: Already exists                                                                                                          
+bd86c13b077a: Pull complete                                                                                                           
+Digest: sha256:8b0c9be8e894e2b7dd0292e884c1081a04883192d8bd84161cfd3a86128e26c6
+Status: Downloaded newer image for c12esolutions/cortex-certifai-prod-hsbc:model_server
+docker.io/c12esolutions/cortex-certifai-prod-hsbc:model_server
+
+PS C:\Users\jwan> docker image ls
+REPOSITORY                                TAG                 IMAGE ID            CREATED             SIZE
+c12esolutions/cortex-certifai-prod-hsbc   0fd9538             d5ac1003709a        3 months ago        605MB
+c12esolutions/cortex-certifai-prod-hsbc   model_server        863b0f25ec2e        3 months ago        1.73GB
+bc_server_1                               v01                 9715e2d59a26        4 months ago        1.73GB
+bc_1                                      v01                 ebf86be9f36e        4 months ago        636MB
+c12esolutions/cortex-certifai-prod-hsbc   0eb4412             47af2fe4973a        5 months ago        631MB
+c12esolutions/cortex-certifai-prod-hsbc   <none>              4220e453df21        5 months ago        1.73GB
+
+Pull image 0fd9538 from cs12ehsbc
+
+PS C:\Users\jwan> docker pull cs12ehsbc/cortex-certifai-prod-hsbc:0fd9538
+0fd9538: Pulling from cs12ehsbc/cortex-certifai-prod-hsbc
+Digest: sha256:f0962645a9f8e27af50331b872696d88ffb7e65e3c79bc2589dff9133a267c8d
+Status: Downloaded newer image for cs12ehsbc/cortex-certifai-prod-hsbc:0fd9538
+docker.io/cs12ehsbc/cortex-certifai-prod-hsbc:
+
+PS C:\Users\jwan> docker image ls
+REPOSITORY                                TAG                 IMAGE ID            CREATED             SIZE
+c12esolutions/cortex-certifai-prod-hsbc   0fd9538             d5ac1003709a        3 months ago        605MB
+cs12ehsbc/cortex-certifai-prod-hsbc       0fd9538             d5ac1003709a        3 months ago        605MB
+c12esolutions/cortex-certifai-prod-hsbc   model_server        863b0f25ec2e        3 months ago        1.73GB
+bc_server_1                               v01                 9715e2d59a26        4 months ago        1.73GB
+bc_1                                      v01                 ebf86be9f36e        4 months ago        636MB
+c12esolutions/cortex-certifai-prod-hsbc   0eb4412             47af2fe4973a        5 months ago        631MB
+c12esolutions/cortex-certifai-prod-hsbc   <none>              4220e453df21        5 months ago        1.73GB
+
+
+Pull image model_server from cs12ehsbc
+
+PS C:\Users\jwan> docker pull cs12ehsbc/cortex-certifai-prod-hsbc:model_server
+model_server: Pulling from cs12ehsbc/cortex-certifai-prod-hsbc
+Digest: sha256:8b0c9be8e894e2b7dd0292e884c1081a04883192d8bd84161cfd3a86128e26c6
+Status: Downloaded newer image for cs12ehsbc/cortex-certifai-prod-hsbc:model_server
+docker.io/cs12ehsbc/cortex-certifai-prod-hsbc:model_server
+
+PS C:\Users\jwan> docker image ls
+REPOSITORY                                TAG                 IMAGE ID            CREATED             SIZE
+cs12ehsbc/cortex-certifai-prod-hsbc       0fd9538             d5ac1003709a        3 months ago        605MB
+c12esolutions/cortex-certifai-prod-hsbc   0fd9538             d5ac1003709a        3 months ago        605MB
+c12esolutions/cortex-certifai-prod-hsbc   model_server        863b0f25ec2e        3 months ago        1.73GB
+cs12ehsbc/cortex-certifai-prod-hsbc       model_server        863b0f25ec2e        3 months ago        1.73GB
+bc_server_1                               v01                 9715e2d59a26        4 months ago        1.73GB
+bc_1                                      v01                 ebf86be9f36e        4 months ago        636MB
+c12esolutions/cortex-certifai-prod-hsbc   0eb4412             47af2fe4973a        5 months ago        631MB
+c12esolutions/cortex-certifai-prod-hsbc   <none>              4220e453df21        5 months ago        1.73GB
+
+
+
+
+
+
+
+
+
+

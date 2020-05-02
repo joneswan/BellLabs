@@ -1,0 +1,19 @@
+version: '3'
+services:
+  certifai:
+    image: cs12ehsbc/cortex-certifai-prod-hsbc:0fd9538-1
+    ports: 
+      - "5000:5000"
+    environment: 
+    - AUTHENTICATE_UI=false
+    - AUTH0_CLIENTID=sdf
+    - AUTH0_DOMAIN=certifai.auth0.com
+    - UI_READONLY=false
+    links:
+      - "certifai-model-server:certifai-model-server-lb"
+    volumes:
+      - ./certifai_config:/root/.certifai
+  certifai-model-server:
+    image: cs12ehsbc/cortex-certifai-prod-hsbc:model_server-1
+    ports: 
+      - "8551:80"
